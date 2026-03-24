@@ -3,7 +3,7 @@ import axios from 'axios'
 import toast from 'react-hot-toast'
 
 // Configure axios base URL
-const API_URL = import.meta.env.VITE_API_URL || (import.meta.env.PROD ? 'https://greenglass-backend.onrender.com' : '')
+const API_URL = import.meta.env.VITE_API_URL || (import.meta.env.PROD ? 'https://greenglass-backend.onrender.com/api' : '')
 axios.defaults.baseURL = API_URL
 
 // Add request interceptor for debugging
