@@ -45,7 +45,12 @@ app.use(helmet({
 
 // ─── CORS ─────────────────────────────────────────────────────────────────────
 app.use(cors({
-  origin: true,
+  origin: [
+    "https://greenglass.online",
+    "https://www.greenglass.online",
+    "https://greenglass.vercel.app"
+  ],
+  methods: ["GET", "POST", "PUT", "DELETE"],
   credentials: true
 }));
 
